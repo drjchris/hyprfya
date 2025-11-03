@@ -1,0 +1,105 @@
+# =========================
+# OS / Editor / Build Cache
+# =========================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# macOS thumbnail caches
+**/.DocumentRevisions-V100
+**/.fseventsd
+**/.Spotlight-V100
+**/.TemporaryItems
+**/.Trashes
+**/.Trash-*
+**/._*
+
+# Linux
+*~
+.cache/
+.locks/
+.local/share/Trash/
+
+# Systemd journal logs
+*.journal
+*.journal~
+
+# =========================
+# Editors
+# =========================
+
+# Vim
+*.swp
+*.swo
+*.swm
+*.un~
+Session.vim
+
+# NeoVim
+.undodir/
+nvimundo/
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+.emacs.desktop.lock
+
+# VS Code
+.vscode/
+.history/
+
+# =========================
+# Git
+# =========================
+
+# Merge/Conflict backups
+*.orig
+
+# =========================
+# Programming languages
+# =========================
+
+# Rust
+target/
+Cargo.lock
+
+# Node
+node_modules/
+npm-debug.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+.dist/
+build/
+env/
+venv/
+.venv/
+
+# Go
+bin/
+pkg/
+*.exe
+
+# Flutter / Dart
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub/
+coverage/
+
+# =========================
+# Hyprland related configs (if generated dynamically)
+# =========================
+hyprland.log

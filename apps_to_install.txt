@@ -1,0 +1,16 @@
+neovim
+hyprland
+hyprpaper
+hyprlock
+ly
+wofi
+waybar
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+ghostty
+zsh
+eza
+flatpak
+wl-clipboard
+nautilus
