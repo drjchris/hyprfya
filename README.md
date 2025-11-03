@@ -19,7 +19,7 @@ scripts and configuration files before running anything.
 
 ## Requirements
 
-- **Arch Linux**
+- **Arch Linux (btw)**
 - **Internet connection**
 - **`git` installed**
 
@@ -50,15 +50,15 @@ If you are starting from scratch, the fastest way is to install Arch using
 Once your Arch system is up and running:
 
 ```bash
-git clone <this-repository-url>
-cd <repository-directory>
+git clone https://github.com/drjchris/hyprfya.git
+cd hyprfya
 ./install.sh
 ```
 
 The installer will:
 
 1. Read the list of packages from `apps_to_install.txt`
-2. Install them via `pacman` (and possibly `yay` if included)
+2. Install them via `pacman`
 3. Copy configuration files from `configs/` to the appropriate directories in `~/.config/`
 
 ---
@@ -94,10 +94,10 @@ your setup, monitors, input devices, theme, etc.
 
 | Component        | Status      |
 |------------------|------------|
-| Package install  | ✅ Basic working |
-| Hyprland config  | 🟡 minimal stuff |
-| Theming          | 🔴 yeah, no. Not even started|
-| Documentation    | 🟡 mediocre at best, but some. |
+| Package install  | ✅ Basic working for pacman stuff only |
+| Hyprland config  | 🟡 Minimal stuff, couple things here and there |
+| Theming          | 🔴 Yeah, no. Not even started|
+| Documentation    | 🟡 Mediocre at best, but some |
 
 ---
 

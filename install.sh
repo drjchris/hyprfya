@@ -47,10 +47,10 @@ copy_configs() {
 config_zshrc() {
 
     # install oh-my-zsh
-    # zsh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    zsh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
     # install syntax highlighting
-    # git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
     ZSHRC_SOURCE="$CONFIGS_DIR/zshrc"
     ZSHRC_DEST="$HOME/.zshrc"
@@ -66,15 +66,20 @@ config_zshrc() {
 } 
 
 
-make_root_directories()  {
+make_home_directories()  {
 	mkdir -p ~/Documents/Drafts
 	mkdir -p ~/Documents/Notes
 	mkdir -p ~/Development
 } 
 
+init_services() {
+    systemctl enable ly.service
+}
+
+
 # Execute functions
 install_apps
 copy_configs
 config_zshrc
-make_root_directories
-
+make_home_directories
+init_services
